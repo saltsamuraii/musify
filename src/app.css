@@ -1,0 +1,59 @@
+h1  {
+    color: #00ffc9;
+    text-align: center;
+}
+
+a {
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+a:hover {
+    color: #00ffc9;
+    cursor: pointer;
+}
+
+a:active {
+    color: #00ffc9;
+    cursor: pointer;
+}
+
+.musicList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+ul > li {
+    padding: 15px 0;
+}
+
+.left {
+    width: 300px;
+    color: #fff;
+    grid-area: menu;
+    border-right: 1px solid #fff;
+}
+
+.center {
+    color: #fff;
+    grid-area: main;
+}
+
+.musicPlayer {
+    color: #fff;
+    grid-area: footer;
+}
+
+.app {
+    display: grid;
+    grid-template-areas:
+    "menu main"
+    "menu footer";
+    text-align: left;
+    background-color: #000;
+}
+
